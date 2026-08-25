@@ -1,0 +1,21 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Jupyter and local editor state
+.ipynb_checkpoints/
+.vscode/
+
+# Generated model and data artifacts
+*.pkl
+*.joblib
+*.pickle
+*.parquet
+
+# Local configuration and operating-system files
+.env
+.DS_Store
+Thumbs.db
