@@ -2,6 +2,19 @@
 
 This project predicts flight ticket prices from booking and itinerary details using supervised machine learning.
 
+## Machine Learning Project Journey
+
+This repository documents the complete workflow for building a flight price prediction model, from data preprocessing and exploratory analysis to model evaluation and sample prediction.
+
+### Project Updates
+
+- **Data preprocessing:** clean the dataset, remove unsuitable columns, handle categorical features, and convert stop counts to numeric values.
+- **Model training:** train Linear Regression, Decision Tree, and Random Forest regressors.
+- **Evaluation:** compare model performance using regression metrics and inspect feature importance.
+- **Prediction:** generate a sample flight-price prediction and save the trained Random Forest model locally.
+
+The notebook is the working record for each stage: [flight_booking_system.ipynb](./flight_booking_system.ipynb).
+
 ## Project Contents
 
 - `flight_booking_system.ipynb`: data cleaning, exploratory analysis, feature engineering, model training, evaluation, and example prediction.
@@ -40,6 +53,18 @@ Open `flight_booking_system.ipynb` in VS Code or Jupyter and run the cells from 
 4. Split and standardize the data.
 5. Compare linear regression, random forest, and decision tree regressors using regression metrics.
 6. Inspect feature importance and generate a sample price prediction.
+
+## Results and Insights
+
+The notebook compares three regression models:
+
+| Model | R-squared |
+| --- | ---: |
+| Linear Regression | 0.9099 |
+| Decision Tree | 0.9755 |
+| Random Forest | 0.9848 |
+
+Random Forest achieved the best reported performance with an $R^2$ score of `0.9848`. The trained model is saved as `random_forest_regressor_model.pkl` when the relevant notebook cell is run.
 
 ## Dataset
 
