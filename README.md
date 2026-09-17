@@ -1,75 +1,43 @@
-# Flight Price Prediction
+# Machine Learning Project Journey
 
-This project predicts flight ticket prices from booking and itinerary details using supervised machine learning.
+This repository collects my machine learning projects as I learn, experiment, and build practical solutions.
 
-## Machine Learning Project Journey
+## Projects
 
-This repository documents the complete workflow for building a flight price prediction model, from data preprocessing and exploratory analysis to model evaluation and sample prediction.
+| Project | Description | Status |
+| --- | --- | --- |
+| [Flight Booking Charges Prediction](./Flight_booking_charges_prediction/) | Predict flight ticket prices from booking and itinerary details using regression models. | In progress |
+| [Wine Classification](./Wine_Classification/) | Classify wine samples using machine learning techniques. | In progress |
 
-### Project Updates
+## Journey
 
-- **Data preprocessing:** clean the dataset, remove unsuitable columns, handle categorical features, and convert stop counts to numeric values.
-- **Model training:** train Linear Regression, Decision Tree, and Random Forest regressors.
-- **Evaluation:** compare model performance using regression metrics and inspect feature importance.
-- **Prediction:** generate a sample flight-price prediction and save the trained Random Forest model locally.
+Each project documents the complete workflow, including:
 
-The notebook is the working record for each stage: [flight_booking_system.ipynb](./flight_booking_system.ipynb).
+- Understanding and preparing the dataset
+- Exploratory data analysis
+- Feature engineering and preprocessing
+- Model training and comparison
+- Evaluation and interpretation
+- Reproducible experiments and improvements
 
-## Project Contents
+## Project Structure
 
-- `flight_booking_system.ipynb`: data cleaning, exploratory analysis, feature engineering, model training, evaluation, and example prediction.
-- `Flight_Booking.csv`: flight booking dataset used by the notebook.
-
-## Features
-
-The notebook uses airline, source and destination cities, departure and arrival times, number of stops, travel class, flight duration, and days left before departure. The target is `price`.
-
-## Setup
-
-```bash
-python -m venv .venv
+```text
+MACHINE_LEARNING_PROJECT/
+├── README.md
+├── Flight_booking_charges_prediction/
+└── Wine_Classification/
 ```
 
-Activate the environment:
+## Adding A New Project
 
-```powershell
-.venv\Scripts\Activate.ps1
-```
+1. Create a descriptive folder inside this directory.
+2. Add the notebook or source code, dataset instructions, and a project-specific `README.md`.
+3. Add the project to the table above with a short description and current status.
+4. Record useful results, lessons learned, and next improvements.
 
-Install dependencies:
+## Future Improvements
 
-```bash
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-Open `flight_booking_system.ipynb` in VS Code or Jupyter and run the cells from top to bottom. The notebook reads `Flight_Booking.csv` from the repository root, so it is portable across machines.
-
-## Workflow
-
-1. Load and inspect the data.
-2. Remove export and high-cardinality columns, then check missing values, duplicates, and outliers.
-3. Encode categorical features and convert stop counts to numeric values.
-4. Split and standardize the data.
-5. Compare linear regression, random forest, and decision tree regressors using regression metrics.
-6. Inspect feature importance and generate a sample price prediction.
-
-## Results and Insights
-
-The notebook compares three regression models:
-
-| Model | R-squared |
-| --- | ---: |
-| Linear Regression | 0.9099 |
-| Decision Tree | 0.9755 |
-| Random Forest | 0.9848 |
-
-Random Forest achieved the best reported performance with an $R^2$ score of `0.9848`. The trained model is saved as `random_forest_regressor_model.pkl` when the relevant notebook cell is run.
-
-## Dataset
-
-The included CSV contains flight booking records. The original dataset reference in the notebook is available [here](https://drive.google.com/file/d/1DbdetuzKL0ULawxgKtBtWrRWtfv52MhA/view?usp=sharing).
-
-## Reproducibility
-
-The train/test split uses `random_state=42`. Generated `.pkl` model files are ignored by Git because they are local artifacts and can be recreated by running the notebook.
+- Add project dates and technology tags.
+- Track model performance and lessons learned across projects.
+- Add links to deployed demos or reports when available.
